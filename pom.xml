@@ -6,7 +6,7 @@
 
     <groupId>org.iansmith.hadoop</groupId>
     <artifactId>hadooptestapp1</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
 
     <repositories>
         <repository>
