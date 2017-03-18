@@ -20,9 +20,11 @@ public class WordCount {
 
         Path inputPath = new Path(args[0]);
         Path outputDir = new Path(args[1]);
+        String separator = new String(args[2]);
 
         // Create configuration
         Configuration conf = new Configuration(true);
+        conf.set("separator", separator);
 
         // Create job
         Job job = new Job(conf, "WordCount");
