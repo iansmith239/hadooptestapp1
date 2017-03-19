@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.iansmith.hadoop</groupId>
     <artifactId>hadooptestapp1</artifactId>
     <version>1.2-SNAPSHOT</version>
+
+    <scm>
+        <url>https://github.com/iansmith239/hadooptestapp1</url>
+        <connection>scm:git:git@github.com:iansmith239/hadooptestapp1.git</connection>
+        <developerConnection>scm:git:git@github.com:iansmith239/hadooptestapp1.git</developerConnection>
+  </scm>
 
     <repositories>
         <repository>
@@ -86,5 +90,14 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>ian</id>
+            <name>Ian's Repo</name>
+            <url>scm:git:git@github.com:iansmith239/hadooptestapp1.git</url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
 
 </project>
